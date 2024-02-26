@@ -8,4 +8,6 @@ add_executable(Practica1 main.cpp
         AbinVec0.hpp
         ABIN.hpp
         abin_E-S.h
-        AbinVec1.hpp)
+        AbinVec1.hpp
+        Ejercicio1.cpp
+        Ejercicio3.cpp)

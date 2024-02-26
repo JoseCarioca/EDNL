@@ -1,3 +1,10 @@
 # ninja log v5
-5	1932	7300020595802566	CMakeFiles/Practica1.dir/main.cpp.obj	9f64e0508ff3cb7a
-1933	2386	7300020600308937	Practica1.exe	bfd9dc5c87fafb3e
+5	793	7302236805106147	CMakeFiles/Practica1.dir/main.cpp.obj	9f64e0508ff3cb7a
+794	928	7302236806410812	Practica1.exe	a154e9b96fd4da02
+11	143	7302235416901801	CMakeFiles/Practica1.dir/Ejercicio1.cpp.obj	29b6fed0ff4fc962
+13	138	7302244710025007	CMakeFiles/Practica1.dir/Ejercicio3.cpp.obj	36d0ce55b3587de6
+6	803	7302244716664047	CMakeFiles/Practica1.dir/main.cpp.obj	9f64e0508ff3cb7a
+803	960	7302244718179990	Practica1.exe	53accb3eff2c7842
+46	688	7305054585595977	CMakeFiles/Practica1.dir/Ejercicio3.cpp.obj	36d0ce55b3587de6
+5	2410	7305054602928923	CMakeFiles/Practica1.dir/main.cpp.obj	9f64e0508ff3cb7a
+2412	2876	7305054607525956	Practica1.exe	53accb3eff2c7842

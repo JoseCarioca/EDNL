@@ -154,5 +154,79 @@ inline T& AbinRel<T>::elemento(nodo n)
     return nodos[n];
 }
 
-te
+template <typename T>
+inline typename AbinRel<T>::nodo AbinRel<T>::raiz() const
+{
+    return (nodos[0] == ELTO_NULO) ? NODO_NULO : 0;
+}
+
+template <typename T>
+inline typename AbinRel<T>::nodo AbinRel<T>::padre(AbinRel::nodo n) const
+{
+    //¿qué dice la especificacion?? ¿Padre de raiz se puede hacer? Respuesta: Sí
+    assert(n >= 0 && n <= maxNodos-1); //nodo valido
+    assert(nodos[n] != ELTO_NULO);
+
+    return (n == 0) ? NODO_NULO : (n-1)/2;
+}
+
+//again comprobar la especificacion pls todo
+//Respuesta: si no existe, devuelve NODO_NULO
+template <typename T>
+inline typename AbinRel<T>::nodo AbinRel<T>::hijoIzqdo(AbinRel::nodo n) const
+{
+    assert(n >= 0 && n <= maxNodos-1); //nodo valido
+    assert( nodos[n] != ELTO_NULO); //nodo existe (nodo del arbol bue)
+    //assert(2*n +)
+    return (2*n+1 >= maxNodos || nodos[2*n+1] == ELTO_NULO) ? NODO_NULO : 2*n+1;
+
+}
+
+template <typename T>
+inline typename AbinRel<T>::nodo AbinRel<T>::hijoDrcho(AbinRel::nodo n) const
+{
+    assert(n >= 0 && n <= maxNodos-1);
+    assert(nodos[n] != ELTO_NULO);
+                                //claro si es eltonulo no puedes devolverlo, tiene
+                                //que devolver NODO_NULO
+    return (2*n+2 >= maxNodos || nodos[2*n+2] == ELTO_NULO) ? NODO_NULO : 2*n+2;
+}
+
+//copia
+template <typename T>
+AbinRel<T>::AbinRel(const AbinRel<T>& A) :
+    nodos(new T[A.maxNodos]),
+    maxNodos(A.maxNodos),
+    ELTO_NULO(A.ELTO_NULO)
+{
+    for(nodo n = 0; n<=maxNodos-1; ++n)
+        nodos[n] = A.nodos[n];
+}
+
+template <typename T>
+inline AbinRel<T>::~AbinRel()
+{
+    delete[] nodos;
+}
+
+template <typename T>
+AbinRel<T>& AbinRel<T>::operator =(const AbinRel<T>& A)
+{
+    if (this != & A)
+    {
+        //destruir el vector y crear uno nuevo si es necesario
+        if (maxNodos != A.maxNodos)
+        {
+            delete[] nodos;
+            maxNodos = A.maxNodos;
+            nodos = new T[maxNodos];
+        }
+        ELTO_NULO = A.ELTO_NULO;
+        //copiar
+        for (nodo n = 0; n<=maxNodos-1; ++n)
+            nodos[n] = A.nodos[n];
+    }
+    return *this;
+}
+
 #endif //PRACTICA1_ABINVEC1_HPP
