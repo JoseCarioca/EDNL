@@ -6,6 +6,7 @@
 #define PRACTICA1_ABINVEC0_HPP
 
 #include <cassert>
+#include <algorithm>
 
 template <typename T>
 class AbinVec0 {
@@ -29,6 +30,8 @@ public:
     nodo hijoDrcho(nodo n) const;
     ~AbinVec0();
     //fuera de especificacion
+    int altura(nodo n); //por que le pasamos el parametro Abin?
+    int profundidad(nodo n, const AbinVec0<T>& A);
     AbinVec0(const AbinVec0<T>& a);
     AbinVec0<T>& operator =(const AbinVec0<T>& A);
 private:
@@ -246,6 +249,27 @@ AbinVec0<T>& AbinVec0<T>::operator=(const AbinVec0<T> &A)
     }
 
     return *this;
+}
+
+template <typename T>
+int AbinVec0<T>::altura(AbinVec0::nodo n)
+{
+    if(n == NODO_NULO)
+        return -1;
+    else
+        return 1 + std::max(altura(nodos[n].hizq), altura(nodos[n].hder));
+}
+
+template <typename T>
+int AbinVec0<T>::profundidad(AbinVec0::nodo n, const AbinVec0<T> &A)
+{
+    int prof = 0;
+    while (n)
+    {
+        ++prof;
+        n = nodos[n].padre;
+    }
+    return prof;
 }
 
 #endif //PRACTICA1_ABINVEC0_HPP

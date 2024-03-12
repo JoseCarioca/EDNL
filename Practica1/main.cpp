@@ -3,7 +3,10 @@
 #include "Ejercicio1.cpp"
 #include "Ejercicio2.cpp"
 #include "Ejercicio3.cpp"
-
+class P {
+public:
+    static int n;
+};
 typedef char t;
 const t fin = '#';
 
@@ -16,7 +19,9 @@ int main() {
     //imprimirAbin(fs, A, fin);
     //fs.close();
     //cout << "*** Arbol A guardado en fichero abin.dat" << endl;
-
+    P prueba;
+    P::n = 5;
+    std::cout << P::n << std::endl;
     cout << "Lectura arbol B de abin.dat" << endl;
     //rellenarAbin(arbol,0);
     //imprimirAbin(arbol);
