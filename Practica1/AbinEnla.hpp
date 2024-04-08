@@ -5,6 +5,7 @@
 #ifndef PRACTICA1_ABINENLA_HPP
 #define PRACTICA1_ABINENLA_HPP
 #include <cassert>
+#include <algorithm>
 
 template <typename T>
 class AbinEnla {
@@ -30,6 +31,8 @@ public:
     //fuera de especificacion
     AbinEnla(const AbinEnla<T>& a);
     AbinEnla<T>& operator =(const AbinEnla<T>& A);
+    int altura(nodo n);
+    int profundidad(nodo n);
 private:
     struct celda {
         T elto;
@@ -217,4 +220,26 @@ typename AbinEnla<T>::nodo AbinEnla<T>::copiar(nodo n)
     return m;
 }//pq copiar devuelve un nodo?
 
+
+
+template <typename T>
+int AbinEnla<T>::altura(AbinEnla::nodo n)
+{
+    if(n == NODO_NULO)
+        return -1;
+    else
+        return 1 + std::max(altura(n->hizq), altura(n->hder));
+}
+
+template <typename T>
+int AbinEnla<T>::profundidad(AbinEnla::nodo n)
+{
+    int prof = 0;
+    while (n)
+    {
+        ++prof;
+        n = n->padre;
+    }
+    return prof;
+}
 #endif //PRACTICA1_ABINENLA_HPP

@@ -19,8 +19,8 @@ int profundidadAbin(typename Abin<T>::nodo n, Abin<T>& A)
 template <typename T>
 int profundidadAbinRec(typename Abin<T>::nodo n, Abin<T>& A)
 {
-    if (n != Abin<T>::NODO_NULO)
-        return -1;
+    if (n != Abin<T>::NODO_NULO) //o n == A.raiz
+        return -1;                  //y aqui return 0
     else
         return 1 + profundidadAbinRec(A.padre(n), A);
 }
