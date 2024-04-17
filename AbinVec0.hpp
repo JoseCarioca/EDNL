@@ -7,6 +7,7 @@
 
 #include <cassert>
 #include <algorithm>
+#include "../pilaenla.h"
 
 template <typename T>
 class AbinVec0 {

@@ -11,4 +11,5 @@ add_executable(Practica1 main.cpp
         AbinVec1.hpp
         Ejercicio1.cpp
         Ejercicio3.cpp
-        ejercicio6.cpp)
+        ejercicio6.cpp
+        ejercicio7Pseudocompleto.hpp)

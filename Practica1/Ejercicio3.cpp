@@ -1,7 +1,8 @@
 //
 // Created by epicg on 21/02/2024.
 //
-//Ejercicio3
+//Ejercicio 3. Determine la profundidad del nodo
+
 #include "AbinEnla.hpp"
 template <typename T> using Abin = AbinEnla<T>;
 

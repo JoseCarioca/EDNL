@@ -1,11 +1,12 @@
 //
 // Created by epicg on 21/02/2024.
 //
-//ejercicio 1
+//ejercicio 1. Numero de nodos de un ABin
 
 #include "AbinEnla.hpp"
 template <typename T> using Abin = AbinEnla<T>;
 
+//Funcion auxiliar para llamada
 template <typename T>
 int numNodosAbin(Abin<T>& A)
 {
@@ -21,7 +22,7 @@ int numNodos_rec(typename Abin<T>::nodo n, const Abin<T>& A)
         return 1 + numNodos_rec(A.hijoIzqdo(n), A) + numNodos_rec(A.hijoDrcho(n), A) ;
 }
 
-
+//no lo usas al final, guardar para usar en el futuro
 template <typename T>
 void preordenAbin(typename Abin<T>::nodo n, const Abin<T>& A,
                   void(*procesar)(typename Abin<T>::nodo, const Abin<T>&))

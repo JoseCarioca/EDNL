@@ -1,7 +1,7 @@
 #include <iostream>
 #include "abin_E-S.h"
 #include "Ejercicio1.cpp"
-#include "Ejercicio2.cpp"
+#include "Ejercicio2Altura.hpp"
 #include "Ejercicio3.cpp"
 class P {
 public:

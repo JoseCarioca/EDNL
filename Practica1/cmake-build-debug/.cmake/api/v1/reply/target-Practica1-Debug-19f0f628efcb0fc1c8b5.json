@@ -106,7 +106,8 @@
 				2,
 				3,
 				4,
-				5
+				5,
+				9
 			]
 		}
 	],
@@ -160,6 +161,11 @@
 			"compileGroupIndex" : 0,
 			"path" : "ejercicio6.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ejercicio7Pseudocompleto.hpp",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

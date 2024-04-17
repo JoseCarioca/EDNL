@@ -1,11 +1,15 @@
 //
 // Created by epicg on 16/02/2024.
 //
-
 #ifndef PRACTICA1_ABIN_HPP
 #define PRACTICA1_ABIN_HPP
 
 #include <cassert>
+/**
+ * Es esta mi implementacion del abin con puntero a raiz??
+ *
+ * @tparam T
+ */
 
 template <typename T>
 class ABIN {
@@ -137,7 +141,7 @@ inline bool ABIN<T>::esDelArbol(ABIN::nodo n) const
     //deberia hacerlo con un assert y añadir precondiciones?
     return (r != NODO_NULO && n != NODO_NULO && n->raiz == r ); //así devuelve false si nullptr o arbol vacio
     //deberia volver true si vacio o sea nullptr?
-}/
+}
 
 template <typename T>
 inline const T& ABIN<T>::elemento(ABIN::nodo n) const

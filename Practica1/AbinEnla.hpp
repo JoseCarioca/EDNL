@@ -31,6 +31,7 @@ public:
     //fuera de especificacion
     AbinEnla(const AbinEnla<T>& a);
     AbinEnla<T>& operator =(const AbinEnla<T>& A);
+    //mejora - por peticion de los ejercicios
     int altura(nodo n);
     int profundidad(nodo n);
 private:
@@ -48,7 +49,6 @@ private:
     nodo copiar(nodo n);
 
 };
-
 
 /* Definicion del nodo nulo */
 template <typename T>
@@ -221,7 +221,7 @@ typename AbinEnla<T>::nodo AbinEnla<T>::copiar(nodo n)
 }//pq copiar devuelve un nodo?
 
 
-
+//hacer iterativo en algun momento
 template <typename T>
 int AbinEnla<T>::altura(AbinEnla::nodo n)
 {

@@ -31,6 +31,9 @@ public:
     AbinRel(const AbinRel<T>& A);
     AbinRel<T>& operator =(const AbinRel<T>& A);
     ~AbinRel();
+
+    //extra poner en otro lado
+    friend void minMaxinsertar(nodo n, const T& e);
 private:
     T* nodos;
     size_t maxNodos;

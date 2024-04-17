@@ -1,7 +1,7 @@
 //
 // Created by epicg on 21/02/2024.
 //
-//ejercicio 2
+//ejercicio 2. Altura de un arbol
 
 #include "AbinEnla.hpp"
 #include "algorithm"
@@ -17,6 +17,7 @@ template <typename T>
 int alturaAbinRec(typename Abin<T>::nodo n, const Abin<T>& A)
 {
     if ( n == Abin<T>::NODO_NULO )
+        //si nodo hoja es altura 0, NODO_NULO debe de ser -1
         return -1;
     else
 
