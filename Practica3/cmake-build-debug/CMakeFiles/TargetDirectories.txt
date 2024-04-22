@@ -1,0 +1,3 @@
+C:/Users/epicg/Documents/GitHub/EDNL/Practica3/cmake-build-debug/CMakeFiles/Practica3.dir
+C:/Users/epicg/Documents/GitHub/EDNL/Practica3/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/epicg/Documents/GitHub/EDNL/Practica3/cmake-build-debug/CMakeFiles/rebuild_cache.dir

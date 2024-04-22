@@ -9,7 +9,8 @@ add_executable(Practica1 main.cpp
         ABIN.hpp
         abin_E-S.h
         AbinVec1.hpp
-        Ejercicio1.cpp
-        Ejercicio3.cpp
-        ejercicio6.cpp
-        ejercicio7Pseudocompleto.hpp)
+        Ejercicio1.HPP
+        Ejercicio3.hpp
+        ejercicio6.hpp
+        ejercicio7Pseudocompleto.hpp
+        apo.hpp)

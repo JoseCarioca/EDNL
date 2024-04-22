@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "Practica5",
+					"name" : "Practica3",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "Practica5::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Practica5-Debug-e2061f0596597e8e56d2.json",
-					"name" : "Practica5",
+					"id" : "Practica3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Practica3-Debug-6ee8a07da40d47a8673f.json",
+					"name" : "Practica3",
 					"projectIndex" : 0
 				}
 			]
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/epicg/Documents/GitHub/EDNL/Practica5/cmake-build-debug",
-		"source" : "C:/Users/epicg/Documents/GitHub/EDNL/Practica5"
+		"build" : "C:/Users/epicg/Documents/GitHub/EDNL/Practica3/cmake-build-debug",
+		"source" : "C:/Users/epicg/Documents/GitHub/EDNL/Practica3"
 	},
 	"version" : 
 	{

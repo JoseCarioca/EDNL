@@ -1,8 +1,8 @@
 #include <iostream>
 #include "abin_E-S.h"
-#include "Ejercicio1.cpp"
+#include "Ejercicio1.HPP"
 #include "Ejercicio2Altura.hpp"
-#include "Ejercicio3.cpp"
+#include "Ejercicio3.hpp"
 class P {
 public:
     static int n;
