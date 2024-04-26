@@ -1,0 +1,3 @@
+C:\Users\epicg\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\Practica4.dir/objects.a
+C:\Users\epicg\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\mingw\bin\ar.exe qc CMakeFiles\Practica4.dir/objects.a @CMakeFiles\Practica4.dir\objects1.rsp
+C:\Users\epicg\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\233.14475.31\bin\mingw\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Practica4.dir/objects.a -Wl,--no-whole-archive -o Practica4.exe -Wl,--out-implib,libPractica4.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Practica4.dir\linkLibs.rsp

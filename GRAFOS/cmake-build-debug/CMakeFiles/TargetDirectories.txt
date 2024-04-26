@@ -1,0 +1,3 @@
+C:/Users/epicg/Documents/GitHub/EDNL/GRAFOS/cmake-build-debug/CMakeFiles/GRAFOS.dir
+C:/Users/epicg/Documents/GitHub/EDNL/GRAFOS/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/epicg/Documents/GitHub/EDNL/GRAFOS/cmake-build-debug/CMakeFiles/rebuild_cache.dir
