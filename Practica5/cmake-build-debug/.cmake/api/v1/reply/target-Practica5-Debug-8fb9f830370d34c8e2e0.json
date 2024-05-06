@@ -98,7 +98,9 @@
 			[
 				1,
 				2,
-				3
+				3,
+				4,
+				5
 			]
 		}
 	],
@@ -123,6 +125,16 @@
 		{
 			"backtrace" : 1,
 			"path" : "apuntes.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ParcialArboles2024.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "AgenEnla.hpp",
 			"sourceGroupIndex" : 1
 		}
 	],

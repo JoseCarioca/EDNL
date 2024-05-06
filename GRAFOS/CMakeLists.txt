@@ -4,4 +4,6 @@ project(GRAFOS)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(GRAFOS main.cpp
-        alg_grafoPMC.h)
+        alg_grafoPMC.h
+        Practica7.cpp
+        Practica7.hpp)

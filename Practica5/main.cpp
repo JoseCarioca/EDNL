@@ -1,9 +1,12 @@
 #include <iostream>
 //#include "../AbinEnla.hpp"
 #include "ExamenReflejados.hpp"
-
+#include "ParcialArboles2024.hpp"
+#include "AgenEnla.hpp"
+#include "agen_E-S.hpp"
 void rellenarReflejados(Abin<int> &A, Abin<int> &B)
 {
+
     A.insertarRaiz(0);
     auto n = A.raiz();
     A.insertarHijoIzqdo(n,1);
@@ -27,6 +30,11 @@ void rellenarReflejados(Abin<int> &A, Abin<int> &B)
 }
 
 int main() {
+    Agen<int> R;
+    pruebaReflejo(R);
+    Agen<int> RR = reflejos(R);
+    imprimirAgen(R);
+    imprimirAgen(RR);
     Abin<int> A,B;
     rellenarReflejados(A,B);
     std::cout << numNodosReflejados(A) << std::endl;

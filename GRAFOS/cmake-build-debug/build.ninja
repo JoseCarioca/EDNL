@@ -55,6 +55,12 @@ build CMakeFiles/GRAFOS.dir/main.cpp.obj: CXX_COMPILER__GRAFOS_unscanned_Debug C
   OBJECT_DIR = CMakeFiles\GRAFOS.dir
   OBJECT_FILE_DIR = CMakeFiles\GRAFOS.dir
 
+build CMakeFiles/GRAFOS.dir/Practica7.cpp.obj: CXX_COMPILER__GRAFOS_unscanned_Debug C$:/Users/epicg/Documents/GitHub/EDNL/GRAFOS/Practica7.cpp || cmake_object_order_depends_target_GRAFOS
+  DEP_FILE = CMakeFiles\GRAFOS.dir\Practica7.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\GRAFOS.dir
+  OBJECT_FILE_DIR = CMakeFiles\GRAFOS.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target GRAFOS
@@ -63,7 +69,7 @@ build CMakeFiles/GRAFOS.dir/main.cpp.obj: CXX_COMPILER__GRAFOS_unscanned_Debug C
 #############################################
 # Link the executable GRAFOS.exe
 
-build GRAFOS.exe: CXX_EXECUTABLE_LINKER__GRAFOS_Debug CMakeFiles/GRAFOS.dir/main.cpp.obj
+build GRAFOS.exe: CXX_EXECUTABLE_LINKER__GRAFOS_Debug CMakeFiles/GRAFOS.dir/main.cpp.obj CMakeFiles/GRAFOS.dir/Practica7.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\GRAFOS.dir
